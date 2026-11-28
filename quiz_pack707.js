@@ -53,7 +53,7 @@ module.exports = [
     },
     {
         "id": "film_0200",
-        "question": "Who plays Holly Gennero in Die Hard?",
+        "question": "Who plays Holly Gennaro in Die Hard?",
         "answers": [
             "Lorraine Bracco",
             "Joan Allen",
@@ -2156,7 +2156,7 @@ module.exports = [
     },
     {
         "id": "film_0286",
-        "question": "In A Good Day to Die Hard, which member of John's family joins him and Jack at the airport at the end?",
+        "question": "In A Good Day to Die Hard, which member of John's family joins him and Jack at the airport at the end of the theatrical cut?",
         "answers": [
             "Lucy",
             "Holly",
@@ -3312,14 +3312,14 @@ module.exports = [
     },
     {
         "id": "film_0423",
-        "question": "Which band performs Summer in the City, heard at the start of Die Hard with a Vengeance?",
+        "question": "Which part of Die Hard with a Vengeance is accompanied by the Lovin’ Spoonful recording of ‘Summer in the City’?",
         "answers": [
-            "The Rascals",
-            "The Byrds",
-            "The Lovin' Spoonful",
-            "The Mamas & the Papas"
+            "The search of the primary school",
+            "The escape from the cargo ship",
+            "The opening montage of New York",
+            "The closing conversation with Zeus"
         ],
-        "correctAnswer": "The Lovin' Spoonful",
+        "correctAnswer": "The opening montage of New York",
         "difficulty": "Medium",
         "dailyEligible": true,
         "topic": "Die Hard with a Vengeance",
@@ -3330,7 +3330,7 @@ module.exports = [
             "1995",
             "Action",
             "Music",
-            "Source: https://www.michaelkamen.com/die-hard-with-a-vengeance-soundtrack-lll"
+            "Source: https://outlawvern.com/2000/01/05/die-hard-with-a-vengeance/"
         ]
     },
     {
@@ -3588,14 +3588,14 @@ module.exports = [
     },
     {
         "id": "film_0435",
-        "question": "Which British band performs Rock & Roll Queen in Die Hard 4.0?",
+        "question": "Whom is Lucy kissing when ‘Rock & Roll Queen’ plays early in Die Hard 4.0?",
         "answers": [
-            "Kaiser Chiefs",
-            "The Subways",
-            "The Fratellis",
-            "Bloc Party"
+            "Matt Farrell",
+            "Her boyfriend, whom John confronts",
+            "Her father",
+            "The Warlock"
         ],
-        "correctAnswer": "The Subways",
+        "correctAnswer": "Her boyfriend, whom John confronts",
         "difficulty": "Medium",
         "dailyEligible": true,
         "topic": "Die Hard 4.0",
@@ -3606,7 +3606,7 @@ module.exports = [
             "2007",
             "Action",
             "Music",
-            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+            "Source: https://www.whatsong.org/movie/live-free-or-die-hard"
         ]
     },
     {
@@ -4888,14 +4888,14 @@ module.exports = [
     },
     {
         "id": "film_5341",
-        "question": "In Die Hard 2, which Patti Page recording is credited on the soundtrack?",
+        "question": "Who shares the music production credit on Die Hard 2 with Michael Kamen and Christopher Brooks?",
         "answers": [
-            "Tennessee Waltz",
-            "Changing Partners",
-            "Old Cape Cod",
-            "Mockin' Bird Hill"
+            "Marco Beltrami",
+            "John Barry",
+            "Stephen McLaughlin",
+            "Bill Conti"
         ],
-        "correctAnswer": "Old Cape Cod",
+        "correctAnswer": "Stephen McLaughlin",
         "difficulty": "Medium",
         "dailyEligible": true,
         "topic": "Die Hard 2",
@@ -4906,7 +4906,7 @@ module.exports = [
             "1990",
             "Action",
             "Music",
-            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+            "Source: https://www.michaelkamen.com/catalogue/die-hard-2"
         ]
     },
     {
@@ -5768,6 +5768,771 @@ module.exports = [
             "Action",
             "Awards",
             "Source: https://vesglobal.org/wp-content/uploads/2019/03/nomineespressrelease2008rev0207082.pdf"
+        ]
+    },
+    {
+        "id": "film_5677",
+        "question": "In Die Hard, why has Holly moved to Los Angeles ahead of John?",
+        "answers": [
+            "She was assigned there by the police",
+            "She moved there to look after Takagi",
+            "She accepted a promotion at Nakatomi",
+            "She was opening her own law practice"
+        ],
+        "correctAnswer": "She accepted a promotion at Nakatomi",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5678",
+        "question": "In Die Hard, what is Ellis doing in Holly's office when Takagi brings John in?",
+        "answers": [
+            "Making a call to the police",
+            "Taking cocaine",
+            "Checking the company accounts",
+            "Writing a speech for Takagi"
+        ],
+        "correctAnswer": "Taking cocaine",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5679",
+        "question": "In Die Hard, what does Hans want the authorities to hand over as a supposed condition for releasing the hostages?",
+        "answers": [
+            "Imprisoned revolutionaries",
+            "An armoured lorry full of cash",
+            "The building's owner",
+            "A public statement from the mayor"
+        ],
+        "correctAnswer": "Imprisoned revolutionaries",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5680",
+        "question": "In Die Hard, how does Argyle discover that the siege is happening in the building above him?",
+        "answers": [
+            "He hears a report over his CB radio",
+            "Holly calls the limousine",
+            "He sees Theo through the garage entrance",
+            "Powell stops him at a roadblock"
+        ],
+        "correctAnswer": "He hears a report over his CB radio",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5681",
+        "question": "In Die Hard, how does John interrupt the attack on the police from the building's upper floors?",
+        "answers": [
+            "He blocks the stairwell with a vending machine",
+            "He cuts the television feed",
+            "He triggers the sprinklers",
+            "He drops explosives down a lift shaft"
+        ],
+        "correctAnswer": "He drops explosives down a lift shaft",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5682",
+        "question": "In Die Hard, how does Karl come to be left hanging before John reaches the roof?",
+        "answers": [
+            "Hans abandons him in a lift shaft",
+            "Powell catches him outside the window",
+            "John wraps a chain around him during their fight",
+            "He is suspended by the fire hose"
+        ],
+        "correctAnswer": "John wraps a chain around him during their fight",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5683",
+        "question": "In Die Hard, who plays FBI Agent Johnson alongside Robert Davi's similarly named agent?",
+        "answers": [
+            "Paul Gleason",
+            "Grand L. Bush",
+            "William Atherton",
+            "Clarence Gilyard Jr."
+        ],
+        "correctAnswer": "Grand L. Bush",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Cast",
+            "Character: Agent Johnson",
+            "Actor: Grand L. Bush",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5684",
+        "question": "In Die Hard, who designed the sets, including the Nakatomi offices?",
+        "answers": [
+            "John Vallone",
+            "Jackson DeGovia",
+            "Patrick Tatopoulos",
+            "Daniel T. Dorrance"
+        ],
+        "correctAnswer": "Jackson DeGovia",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard",
+            "1988",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/55749-DIE-HARD"
+        ]
+    },
+    {
+        "id": "film_5685",
+        "question": "In Die Hard 2, what surprises Powell when he checks the records for Oswald Cochrane?",
+        "answers": [
+            "Cochrane was reported killed in Honduras two years earlier",
+            "Cochrane is still employed at the airport",
+            "Cochrane is listed as a witness in the Nakatomi case",
+            "Cochrane is actually a member of the airport police"
+        ],
+        "correctAnswer": "Cochrane was reported killed in Honduras two years earlier",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5686",
+        "question": "In Die Hard 2, what is Barnes hoping to reach when armed men ambush his party in the unfinished annex?",
+        "answers": [
+            "A generator for the runway lights",
+            "The airport's fuel reserve",
+            "The police radio dispatcher",
+            "An antenna array that could restore communications"
+        ],
+        "correctAnswer": "An antenna array that could restore communications",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5687",
+        "question": "In Die Hard 2, why does Trudeau keep the incoming planes circling before Stuart issues his demands?",
+        "answers": [
+            "The terminal is being evacuated",
+            "The runway is blocked by a crashed cargo jet",
+            "Bad weather is delaying their landings",
+            "The pilots have been ordered to return to their departure airports"
+        ],
+        "correctAnswer": "Bad weather is delaying their landings",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5688",
+        "question": "In Die Hard 2, how does Thornburg get in touch with his television station from Holly's plane?",
+        "answers": [
+            "He takes over the flight crew's radio",
+            "He secretly signals a television helicopter",
+            "He uses an onboard telephone",
+            "He sends a message through the captain's pager"
+        ],
+        "correctAnswer": "He uses an onboard telephone",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5689",
+        "question": "In Die Hard 2, what does Stuart demand be made available for his and Esperanza's departure?",
+        "answers": [
+            "An Army transport helicopter",
+            "An empty Boeing 747 cargo jet",
+            "A chartered passenger Concorde",
+            "A fleet of snowmobiles"
+        ],
+        "correctAnswer": "An empty Boeing 747 cargo jet",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Storyline",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5690",
+        "question": "In Die Hard 2, who plays Captain Lorenzo's brother Vito?",
+        "answers": [
+            "Robert Costanzo",
+            "Art Evans",
+            "John Amos",
+            "Tom Bower"
+        ],
+        "correctAnswer": "Robert Costanzo",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Cast",
+            "Character: Vito Lorenzo",
+            "Actor: Robert Costanzo",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5691",
+        "question": "In Die Hard 2, which Los Angeles airport provided the terminal concourse used to portray Dulles?",
+        "answers": [
+            "Hollywood Burbank Airport",
+            "Long Beach Airport",
+            "Van Nuys Airport",
+            "Los Angeles International Airport"
+        ],
+        "correctAnswer": "Los Angeles International Airport",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/67916-DIE-HARD-2"
+        ]
+    },
+    {
+        "id": "film_5692",
+        "question": "In Die Hard with a Vengeance, what is the answer to Simon's riddle about meeting a man with seven wives on the way to St Ives?",
+        "answers": [
+            "Seven",
+            "Forty-nine",
+            "Three hundred and forty-three",
+            "One"
+        ],
+        "correctAnswer": "One",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard with a Vengeance",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard with a Vengeance",
+            "1995",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=die-hard-with-a-vengeance"
+        ]
+    },
+    {
+        "id": "film_5693",
+        "question": "In Die Hard with a Vengeance, which school does Cobb's team search after the clue about the 21st US president?",
+        "answers": [
+            "P.S. 1 Alfred E. Smith",
+            "Washington Irving High School",
+            "Chester A. Arthur Elementary School",
+            "Theodore Roosevelt High School"
+        ],
+        "correctAnswer": "Chester A. Arthur Elementary School",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard with a Vengeance",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard with a Vengeance",
+            "1995",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=die-hard-with-a-vengeance"
+        ]
+    },
+    {
+        "id": "film_5694",
+        "question": "In Die Hard with a Vengeance, what does the principal tell pupils they are practising to keep them calm during the evacuation?",
+        "answers": [
+            "An earthquake drill",
+            "A fire drill",
+            "An assembly rehearsal",
+            "An emergency roll call"
+        ],
+        "correctAnswer": "A fire drill",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard with a Vengeance",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard with a Vengeance",
+            "1995",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=die-hard-with-a-vengeance"
+        ]
+    },
+    {
+        "id": "film_5695",
+        "question": "In Die Hard with a Vengeance, where does Zeus go after working out Simon's clue about the home team's dugout?",
+        "answers": [
+            "Yankee Stadium",
+            "Shea Stadium",
+            "Madison Square Garden",
+            "Ebbets Field"
+        ],
+        "correctAnswer": "Yankee Stadium",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard with a Vengeance",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard with a Vengeance",
+            "1995",
+            "Action",
+            "Storyline",
+            "Source: https://www.springfieldspringfield.co.uk/movie_script.php?movie=die-hard-with-a-vengeance"
+        ]
+    },
+    {
+        "id": "film_5696",
+        "question": "In Die Hard 4.0, what happens at FBI Cyber Division headquarters that prompts Bowman to round up hackers for questioning?",
+        "answers": [
+            "A brief blackout",
+            "A fire in the evidence store",
+            "A bomb threat by telephone",
+            "A break-in at the main reception"
+        ],
+        "correctAnswer": "A brief blackout",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 4.0",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 4.0",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5697",
+        "question": "In Die Hard 4.0, what is Gabriel's personal connection to Mai Linh?",
+        "answers": [
+            "She is his sister",
+            "She is his ex-wife",
+            "She is his daughter",
+            "She is his girlfriend as well as his accomplice"
+        ],
+        "correctAnswer": "She is his girlfriend as well as his accomplice",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 4.0",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 4.0",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5698",
+        "question": "In Die Hard 4.0, which city do John and Matt reach by helicopter to ask the Warlock for help?",
+        "answers": [
+            "Boston",
+            "Philadelphia",
+            "Baltimore",
+            "Richmond"
+        ],
+        "correctAnswer": "Baltimore",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 4.0",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 4.0",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5699",
+        "question": "In Die Hard 4.0, what government agency's building is the cover for the backup facility in Woodlawn?",
+        "answers": [
+            "Federal Aviation Administration",
+            "Social Security Administration",
+            "Internal Revenue Service",
+            "Department of State"
+        ],
+        "correctAnswer": "Social Security Administration",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 4.0",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 4.0",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5700",
+        "question": "In Die Hard 4.0, why does Gabriel shoot Matt in the hangar?",
+        "answers": [
+            "Matt tries to run outside for help",
+            "Matt refuses to decrypt the data",
+            "Matt gives Gabriel the wrong address",
+            "Matt breaks Gabriel's radio"
+        ],
+        "correctAnswer": "Matt refuses to decrypt the data",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard 4.0",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 4.0",
+            "2007",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Live_Free_or_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5701",
+        "question": "In A Good Day to Die Hard, why does Komarov let the CIA believe he possesses an incriminating file?",
+        "answers": [
+            "He wants its protection while he gets to the hidden uranium",
+            "He wants it to take Irina to a safe house in France",
+            "He wants to arrange a prisoner exchange for Chagarin",
+            "He wants it to shut down the Chernobyl plant"
+        ],
+        "correctAnswer": "He wants its protection while he gets to the hidden uranium",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5702",
+        "question": "In A Good Day to Die Hard, which cargo helicopter does Irina fly during the Chernobyl climax?",
+        "answers": [
+            "A Boeing Chinook",
+            "A Sikorsky Black Hawk",
+            "A Kamov Ka-32",
+            "A Mil Mi-26"
+        ],
+        "correctAnswer": "A Mil Mi-26",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5703",
+        "question": "In A Good Day to Die Hard, what does Irina do once she runs out of ammunition while trying to avenge her father?",
+        "answers": [
+            "She lands on the roof and gives herself up",
+            "She jumps out and leaves the helicopter in a hover",
+            "She deliberately rams the building with the helicopter",
+            "She flies away with the uranium"
+        ],
+        "correctAnswer": "She deliberately rams the building with the helicopter",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5704",
+        "question": "In A Good Day to Die Hard, which character drops John off at the airport in the theatrical cut?",
+        "answers": [
+            "Al Powell",
+            "Jack McClane",
+            "Lucy McClane",
+            "Holly McClane"
+        ],
+        "correctAnswer": "Lucy McClane",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5705",
+        "question": "In A Good Day to Die Hard, which actor from Die Hard with a Vengeance returns in a different role as Lieutenant Foxy?",
+        "answers": [
+            "Graham Greene",
+            "Aldis Hodge",
+            "Michael Rispoli",
+            "Kevin Chamberlin"
+        ],
+        "correctAnswer": "Aldis Hodge",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Cast",
+            "Character: Lieutenant Foxy",
+            "Actor: Aldis Hodge",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5706",
+        "question": "In A Good Day to Die Hard, what change to the Moscow chase distinguishes the Blu-ray extended cut from the theatrical cut?",
+        "answers": [
+            "The chase runs longer",
+            "The chase is replaced with a foot pursuit",
+            "The vehicles change to motorcycles",
+            "The chase is relocated to Chernobyl"
+        ],
+        "correctAnswer": "The chase runs longer",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Production",
+            "Source: https://en.wikipedia.org/wiki/A_Good_Day_to_Die_Hard"
+        ]
+    },
+    {
+        "id": "film_5707",
+        "question": "In Die Hard 2, which industry award nominated the film for its sound effects and Foley editing?",
+        "answers": [
+            "Saturn Award",
+            "Golden Globe Award",
+            "American Cinema Editors Eddie",
+            "Golden Reel Award"
+        ],
+        "correctAnswer": "Golden Reel Award",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Die Hard 2",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard 2",
+            "1990",
+            "Action",
+            "Awards",
+            "Source: https://en.wikipedia.org/wiki/Golden_Reel_Award_for_Outstanding_Achievement_in_Sound_Editing_%E2%80%93_Sound_Effects_and_Foley_for_Feature_Film"
+        ]
+    },
+    {
+        "id": "film_5708",
+        "question": "In Die Hard with a Vengeance, which orchestra performed Michael Kamen's score?",
+        "answers": [
+            "London Symphony Orchestra",
+            "Boston Pops Orchestra",
+            "Hollywood Studio Symphony",
+            "Seattle Symphony"
+        ],
+        "correctAnswer": "Seattle Symphony",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Die Hard with a Vengeance",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: Die Hard with a Vengeance",
+            "1995",
+            "Action",
+            "Music",
+            "Source: https://www.michaelkamen.com/die-hard-with-a-vengeance-soundtrack"
+        ]
+    },
+    {
+        "id": "film_5709",
+        "question": "In A Good Day to Die Hard, who was the production designer?",
+        "answers": [
+            "Jackson DeGovia",
+            "John Vallone",
+            "Daniel T. Dorrance",
+            "Patrick Tatopoulos"
+        ],
+        "correctAnswer": "Daniel T. Dorrance",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "A Good Day to Die Hard",
+        "category": "Film",
+        "tags": [
+            "Die Hard franchise",
+            "Film: A Good Day to Die Hard",
+            "2013",
+            "Action",
+            "Production",
+            "Source: https://www.crew-united.com/en/A-Good-Day-to-Die-Hard__158349.html"
         ]
     }
 ];
