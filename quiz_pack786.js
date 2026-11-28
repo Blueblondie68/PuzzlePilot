@@ -8750,5 +8750,523 @@ module.exports = [
                 "Source: https://www.startrek.com/movies/star-trek-beyond",
                 "Source: https://en.wikipedia.org/wiki/Star_Trek_Beyond"
             ]
-        }
+        },
+    {
+        "id": "film_5655",
+        "question": "In Star Trek: The Motion Picture, who photographed Robert Wise's film?",
+        "answers": [
+            "Gayne Rescher",
+            "Andrew Laszlo",
+            "Richard H. Kline",
+            "Hiro Narita"
+        ],
+        "correctAnswer": "Richard H. Kline",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek: The Motion Picture",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek: The Motion Picture",
+            "1979",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/53863"
+        ]
+    },
+    {
+        "id": "film_5656",
+        "question": "In Star Trek: The Motion Picture, which creator of Star Trek received the film's producer credit?",
+        "answers": [
+            "Harve Bennett",
+            "Rick Berman",
+            "Gene Roddenberry",
+            "Brannon Braga"
+        ],
+        "correctAnswer": "Gene Roddenberry",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek: The Motion Picture",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek: The Motion Picture",
+            "1979",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/53863"
+        ]
+    },
+    {
+        "id": "film_5657",
+        "question": "In Star Trek II: The Wrath of Khan, which young engineer’s death in sickbay after the Reliant’s attack leaves Scotty visibly distraught?",
+        "answers": [
+            "Clark Terrell",
+            "Peter Preston",
+            "David Marcus",
+            "Joachim"
+        ],
+        "correctAnswer": "Peter Preston",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek II: The Wrath of Khan",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek II: The Wrath of Khan",
+            "1982",
+            "Science Fiction",
+            "Storyline",
+            "Source: https://www.startrek.com/movies/star-trek-ii-the-wrath-of-khan"
+        ]
+    },
+    {
+        "id": "film_5658",
+        "question": "In Star Trek III: The Search for Spock, who photographed Leonard Nimoy's first Star Trek film as director?",
+        "answers": [
+            "Charles Correll",
+            "Andrew Laszlo",
+            "Don Peterman",
+            "Richard H. Kline"
+        ],
+        "correctAnswer": "Charles Correll",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek III: The Search for Spock",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek III: The Search for Spock",
+            "1984",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.worldradiohistory.com/Archive-International-Television-Almanac/1985/International-Television-Almanac-1985.pdf"
+        ]
+    },
+    {
+        "id": "film_5659",
+        "question": "In Star Trek III: The Search for Spock, who plays the Vulcan high priestess T'Lar?",
+        "answers": [
+            "Jane Wyatt",
+            "Robin Curtis",
+            "Grace Lee Whitney",
+            "Judith Anderson"
+        ],
+        "correctAnswer": "Judith Anderson",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek III: The Search for Spock",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek III: The Search for Spock",
+            "1984",
+            "Science Fiction",
+            "Cast",
+            "Character: T'Lar",
+            "Actor: Judith Anderson",
+            "Source: https://www.startrek.com/news/star-trek-iiis-tlar-in-a-very-different-role"
+        ]
+    },
+    {
+        "id": "film_5660",
+        "question": "In Star Trek III: The Search for Spock, which Saturn Award film category nominated the third adventure?",
+        "answers": [
+            "Best Fantasy Film",
+            "Best Horror Film",
+            "Best Animated Film",
+            "Best Science Fiction Film"
+        ],
+        "correctAnswer": "Best Science Fiction Film",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek III: The Search for Spock",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek III: The Search for Spock",
+            "1984",
+            "Science Fiction",
+            "Awards",
+            "Source: https://www.imdb.com/title/tt0088170/awards/"
+        ]
+    },
+    {
+        "id": "film_5661",
+        "question": "In Star Trek IV: The Voyage Home, in which Hugo Award category was the fourth film a finalist?",
+        "answers": [
+            "Best Related Work",
+            "Best Novel",
+            "Best Dramatic Presentation",
+            "Best Professional Artist"
+        ],
+        "correctAnswer": "Best Dramatic Presentation",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek IV: The Voyage Home",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek IV: The Voyage Home",
+            "1986",
+            "Science Fiction",
+            "Awards",
+            "Source: https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+        ]
+    },
+    {
+        "id": "film_5662",
+        "question": "In Star Trek V: The Final Frontier, which Californian dry lake represented the barren surface of Nimbus III?",
+        "answers": [
+            "Searles Lake",
+            "Owens Dry Lake",
+            "Rogers Dry Lake",
+            "Bristol Dry Lake"
+        ],
+        "correctAnswer": "Owens Dry Lake",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek V: The Final Frontier",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek V: The Final Frontier",
+            "1989",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.startrek.com/news/trek-v-wrapped-filming-30-years-ago"
+        ]
+    },
+    {
+        "id": "film_5663",
+        "question": "In Star Trek V: The Final Frontier, which rock formation stood in for the terrain of Sha Ka Ree?",
+        "answers": [
+            "The Trona Pinnacles",
+            "The Alabama Hills",
+            "Red Rock Canyon",
+            "Vasquez Rocks"
+        ],
+        "correctAnswer": "The Trona Pinnacles",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek V: The Final Frontier",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek V: The Final Frontier",
+            "1989",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.startrek.com/news/trek-v-wrapped-filming-30-years-ago"
+        ]
+    },
+    {
+        "id": "film_5664",
+        "question": "In Star Trek V: The Final Frontier, who plays the Federation representative on Nimbus III, St. John Talbot?",
+        "answers": [
+            "David Warner",
+            "Charles Cooper",
+            "Todd Bryant",
+            "Laurence Luckinbill"
+        ],
+        "correctAnswer": "David Warner",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek V: The Final Frontier",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek V: The Final Frontier",
+            "1989",
+            "Science Fiction",
+            "Cast",
+            "Character: St. John Talbot",
+            "Actor: David Warner",
+            "Source: https://catalog.afi.com/Film/58297-STAR-TREKVTHEFINALFRONTIER"
+        ]
+    },
+    {
+        "id": "film_5665",
+        "question": "In Star Trek V: The Final Frontier, who plays Romulan representative Caithlin Dar?",
+        "answers": [
+            "Kim Cattrall",
+            "Nichelle Nichols",
+            "Iman",
+            "Cynthia Gouw"
+        ],
+        "correctAnswer": "Cynthia Gouw",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek V: The Final Frontier",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek V: The Final Frontier",
+            "1989",
+            "Science Fiction",
+            "Cast",
+            "Character: Caithlin Dar",
+            "Actor: Cynthia Gouw",
+            "Source: https://catalog.afi.com/Film/58297-STAR-TREKVTHEFINALFRONTIER"
+        ]
+    },
+    {
+        "id": "film_5666",
+        "question": "In Star Trek VI: The Undiscovered Country, who photographed the original crew's final film together?",
+        "answers": [
+            "Charles Correll",
+            "Andrew Laszlo",
+            "Hiro Narita",
+            "John A. Alonzo"
+        ],
+        "correctAnswer": "Hiro Narita",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek VI: The Undiscovered Country",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek VI: The Undiscovered Country",
+            "1991",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/59051-STAR-TREK-VI--THE-UNDISCOVERED-COUNTRY"
+        ]
+    },
+    {
+        "id": "film_5667",
+        "question": "In Star Trek Generations, who served as director of photography?",
+        "answers": [
+            "Hiro Narita",
+            "John A. Alonzo",
+            "Matthew F. Leonetti",
+            "Jeffrey L. Kimball"
+        ],
+        "correctAnswer": "John A. Alonzo",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Generations",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Generations",
+            "1994",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/60245-STAR-TREK-GENERATIONS"
+        ]
+    },
+    {
+        "id": "film_5668",
+        "question": "In Star Trek: First Contact, who plays Lieutenant Hawk, who takes part in the spacewalk at the deflector dish?",
+        "answers": [
+            "Adam Scott",
+            "Neal McDonough",
+            "Paul Winfield",
+            "Dwight Schultz"
+        ],
+        "correctAnswer": "Neal McDonough",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek: First Contact",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek: First Contact",
+            "1996",
+            "Science Fiction",
+            "Cast",
+            "Character: Lieutenant Hawk",
+            "Actor: Neal McDonough",
+            "Source: https://en.wikipedia.org/wiki/Star_Trek:_First_Contact"
+        ]
+    },
+    {
+        "id": "film_5669",
+        "question": "In Star Trek: Insurrection, who plays the Starfleet admiral working with Ru'afo, Matthew Dougherty?",
+        "answers": [
+            "Anthony Zerbe",
+            "Gregg Henry",
+            "David Warner",
+            "F. Murray Abraham"
+        ],
+        "correctAnswer": "Anthony Zerbe",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek: Insurrection",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek: Insurrection",
+            "1998",
+            "Science Fiction",
+            "Cast",
+            "Character: Matthew Dougherty",
+            "Actor: Anthony Zerbe",
+            "Source: https://en.wikipedia.org/wiki/Star_Trek:_Insurrection"
+        ]
+    },
+    {
+        "id": "film_5670",
+        "question": "In Star Trek Nemesis, who photographed Stuart Baird's film?",
+        "answers": [
+            "John A. Alonzo",
+            "Hiro Narita",
+            "Dan Mindel",
+            "Jeffrey L. Kimball"
+        ],
+        "correctAnswer": "Jeffrey L. Kimball",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Nemesis",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Nemesis",
+            "2002",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/62579-STAR-TREK-NEMESIS"
+        ]
+    },
+    {
+        "id": "film_5671",
+        "question": "In Star Trek Nemesis, who received the film's editing credit?",
+        "answers": [
+            "Todd Ramsay",
+            "John Wright",
+            "Dallas Puett",
+            "Stuart Baird"
+        ],
+        "correctAnswer": "Dallas Puett",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Nemesis",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Nemesis",
+            "2002",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/62579-STAR-TREK-NEMESIS"
+        ]
+    },
+    {
+        "id": "film_5672",
+        "question": "In Star Trek Nemesis, who plays Romulan Senator Tal'aura, who leaves the chamber shortly before the opening attack?",
+        "answers": [
+            "Dina Meyer",
+            "Kate Mulgrew",
+            "Shannon Cochran",
+            "Whoopi Goldberg"
+        ],
+        "correctAnswer": "Shannon Cochran",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Star Trek Nemesis",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Nemesis",
+            "2002",
+            "Science Fiction",
+            "Cast",
+            "Character: Tal'aura",
+            "Actor: Shannon Cochran",
+            "Source: https://catalog.afi.com/Film/62579-STAR-TREK-NEMESIS"
+        ]
+    },
+    {
+        "id": "film_5673",
+        "question": "In Star Trek Nemesis, which craft earned Bob Ringwood a Saturn Award nomination?",
+        "answers": [
+            "Make-up",
+            "Costume Design",
+            "Visual Effects",
+            "Production Design"
+        ],
+        "correctAnswer": "Costume Design",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Nemesis",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Nemesis",
+            "2002",
+            "Science Fiction",
+            "Awards",
+            "Source: https://www.imdb.com/title/tt0253754/awards/"
+        ]
+    },
+    {
+        "id": "film_5674",
+        "question": "In Star Trek (2009), who worked with J. J. Abrams as director of photography on the first Kelvin film?",
+        "answers": [
+            "Dan Mindel",
+            "Stephen F. Windon",
+            "Jeffrey L. Kimball",
+            "Hiro Narita"
+        ],
+        "correctAnswer": "Dan Mindel",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek (2009)",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek (2009)",
+            "2009",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/news/mindel-named-2019-kodak-cinematographer-in-residence-at-ucla/"
+        ]
+    },
+    {
+        "id": "film_5675",
+        "question": "In Star Trek Into Darkness, which editor shares credit with Mary Jo Markey?",
+        "answers": [
+            "Dallas Puett",
+            "Verna Fields",
+            "Carol Littleton",
+            "Maryann Brandon"
+        ],
+        "correctAnswer": "Maryann Brandon",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Into Darkness",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Into Darkness",
+            "2013",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/69413-STAR-TREKINTODARKNESS"
+        ]
+    },
+    {
+        "id": "film_5676",
+        "question": "In Star Trek Beyond, which director of photography reunited with Justin Lin after working with him on the Fast & Furious series?",
+        "answers": [
+            "Dan Mindel",
+            "Jeffrey L. Kimball",
+            "Charles Correll",
+            "Stephen F. Windon"
+        ],
+        "correctAnswer": "Stephen F. Windon",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Star Trek Beyond",
+        "category": "Film",
+        "tags": [
+            "Star Trek franchise",
+            "Film: Star Trek Beyond",
+            "2016",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/news/august-issue-with-star-trek-beyond/"
+        ]
+    }
 ];
