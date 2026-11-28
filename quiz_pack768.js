@@ -5452,5 +5452,212 @@ module.exports = [
                 "Source: https://www.ilm.com/credits/terminator-dark-fate-credits/",
                 "Source: https://en.wikipedia.org/wiki/Terminator:_Dark_Fate"
             ]
-        }
+        },
+    {
+        "id": "film_5575",
+        "question": "In The Terminator, who edited the film?",
+        "answers": [
+            "Conrad Buff",
+            "Richard A. Harris",
+            "Mark Goldblatt",
+            "Michael Biehn"
+        ],
+        "correctAnswer": "Mark Goldblatt",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Terminator",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: The Terminator",
+            "1984",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/57224"
+        ]
+    },
+    {
+        "id": "film_5576",
+        "question": "In The Terminator, which cinematographer later returned to shoot the first sequel?",
+        "answers": [
+            "Don Burgess",
+            "Russell Carpenter",
+            "Adam Greenberg",
+            "Kramer Morgenthau"
+        ],
+        "correctAnswer": "Adam Greenberg",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Terminator",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: The Terminator",
+            "1984",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/57224"
+        ]
+    },
+    {
+        "id": "film_5577",
+        "question": "In The Terminator, how much does Sarah agree to pay the boy for the Polaroid he takes at the petrol station?",
+        "answers": [
+            "Two dollars",
+            "Four dollars",
+            "Five dollars",
+            "Ten dollars"
+        ],
+        "correctAnswer": "Four dollars",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Terminator",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: The Terminator",
+            "1984",
+            "Action",
+            "Storyline",
+            "Source: https://transcripts.simpleremix.com/script.php/the-terminator-1984-MxL"
+        ]
+    },
+    {
+        "id": "film_5578",
+        "question": "In Terminator 2: Judgment Day, who was ILM's visual effects supervisor on the film?",
+        "answers": [
+            "Dennis Muren",
+            "John Knoll",
+            "Grady Cofer",
+            "Richard Edlund"
+        ],
+        "correctAnswer": "Dennis Muren",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Terminator 2: Judgment Day",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator 2: Judgment Day",
+            "1991",
+            "Action",
+            "Production",
+            "Source: https://www.ilm.com/vfx/terminator-2-judgment-day/"
+        ]
+    },
+    {
+        "id": "film_5579",
+        "question": "In Terminator 3: Rise of the Machines, who was the cinematographer?",
+        "answers": [
+            "Adam Greenberg",
+            "Shane Hurlbut",
+            "Ken Seng",
+            "Don Burgess"
+        ],
+        "correctAnswer": "Don Burgess",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Terminator 3: Rise of the Machines",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator 3: Rise of the Machines",
+            "2003",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/62917"
+        ]
+    },
+    {
+        "id": "film_5580",
+        "question": "In Terminator Salvation, how does John persuade resistance fighters to wait before attacking Skynet's base?",
+        "answers": [
+            "He announces that the machines have surrendered",
+            "He tells them the base is already empty",
+            "He reports that Blair has captured Skynet's leader",
+            "He broadcasts that it is holding human prisoners"
+        ],
+        "correctAnswer": "He broadcasts that it is holding human prisoners",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Terminator Salvation",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator Salvation",
+            "2009",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Terminator_Salvation"
+        ]
+    },
+    {
+        "id": "film_5581",
+        "question": "In Terminator Salvation, which resistance leader refuses to call off the attack despite John's warning?",
+        "answers": [
+            "Kyle Reese",
+            "Marcus Wright",
+            "General Ashdown",
+            "Barnes"
+        ],
+        "correctAnswer": "General Ashdown",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Terminator Salvation",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator Salvation",
+            "2009",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/Terminator_Salvation"
+        ]
+    },
+    {
+        "id": "film_5582",
+        "question": "In Terminator Genisys, who supervised ILM's visual effects work?",
+        "answers": [
+            "Dennis Muren",
+            "Grady Cofer",
+            "John Knoll",
+            "Ben Snow"
+        ],
+        "correctAnswer": "Grady Cofer",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Terminator Genisys",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator Genisys",
+            "2015",
+            "Action",
+            "Production",
+            "Source: https://www.ilm.com/credits/terminator-genisys-credits/"
+        ]
+    },
+    {
+        "id": "film_5583",
+        "question": "In Terminator: Dark Fate, who was ILM's visual effects supervisor?",
+        "answers": [
+            "Eric Barba",
+            "Grady Cofer",
+            "Dennis Muren",
+            "Richard Edlund"
+        ],
+        "correctAnswer": "Eric Barba",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Terminator: Dark Fate",
+        "category": "Film",
+        "tags": [
+            "Terminator franchise",
+            "Film: Terminator: Dark Fate",
+            "2019",
+            "Action",
+            "Production",
+            "Source: https://www.ilm.com/credits/terminator-dark-fate-credits/"
+        ]
+    }
 ];
