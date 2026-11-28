@@ -4132,5 +4132,143 @@ module.exports = [
                 "Actor: Kumail Nanjiani",
                 "Source: https://en.wikipedia.org/wiki/Men_in_Black:_International"
             ]
-        }
+        },
+    {
+        "id": "film_5584",
+        "question": "In Men in Black, who photographed the film?",
+        "answers": [
+            "Don Peterman",
+            "Greg Gardiner",
+            "Bill Pope",
+            "Stuart Dryburgh"
+        ],
+        "correctAnswer": "Don Peterman",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black",
+            "1997",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black/"
+        ]
+    },
+    {
+        "id": "film_5585",
+        "question": "In Men in Black, who designed the production, including the agency's headquarters?",
+        "answers": [
+            "Rick Heinrichs",
+            "Charles Wood",
+            "Dennis Gassner",
+            "Bo Welch"
+        ],
+        "correctAnswer": "Bo Welch",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black",
+            "1997",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black/"
+        ]
+    },
+    {
+        "id": "film_5586",
+        "question": "In Men in Black II, who was the director of photography?",
+        "answers": [
+            "Don Peterman",
+            "Bill Pope",
+            "Greg Gardiner",
+            "Stuart Dryburgh"
+        ],
+        "correctAnswer": "Greg Gardiner",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black II",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black II",
+            "2002",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black-ii/"
+        ]
+    },
+    {
+        "id": "film_5587",
+        "question": "In Men in Black 3, who was the director of photography?",
+        "answers": [
+            "Greg Gardiner",
+            "Bill Pope",
+            "Don Peterman",
+            "Stuart Dryburgh"
+        ],
+        "correctAnswer": "Bill Pope",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black 3",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black 3",
+            "2012",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black-3/"
+        ]
+    },
+    {
+        "id": "film_5588",
+        "question": "In Men in Black: International, who was the director of photography?",
+        "answers": [
+            "Bill Pope",
+            "Stuart Dryburgh",
+            "Greg Gardiner",
+            "Don Peterman"
+        ],
+        "correctAnswer": "Stuart Dryburgh",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black: International",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black: International",
+            "2019",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black-international/"
+        ]
+    },
+    {
+        "id": "film_5589",
+        "question": "In Men in Black: International, who is credited as an editor on the film?",
+        "answers": [
+            "Christian Wagner",
+            "Jim Miller",
+            "Steven Weisberg",
+            "Arthur Schmidt"
+        ],
+        "correctAnswer": "Christian Wagner",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Men in Black: International",
+        "category": "Film",
+        "tags": [
+            "Men in Black franchise",
+            "Film: Men in Black: International",
+            "2019",
+            "Action",
+            "Production",
+            "Source: https://amblin.com/movie/men-in-black-international/"
+        ]
+    }
 ];
