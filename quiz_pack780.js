@@ -4176,5 +4176,190 @@ module.exports = [
                 "Source: https://www.youtube.com/watch?v=rVrRjt69lhU",
                 "Source: https://en.wikipedia.org/wiki/The_Predator_Holiday_Special"
             ]
-        }
+        },
+    {
+        "id": "film_5627",
+        "question": "In Predator, who was the cinematographer on the original film?",
+        "answers": [
+            "Peter Levy",
+            "Larry Fong",
+            "Gyula Pados",
+            "Donald McAlpine"
+        ],
+        "correctAnswer": "Donald McAlpine",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Predator",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Predator",
+            "1987",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/57783"
+        ]
+    },
+    {
+        "id": "film_5628",
+        "question": "In Predator 2, who photographed the first sequel?",
+        "answers": [
+            "Donald McAlpine",
+            "Larry Fong",
+            "Jeff Cutter",
+            "Peter Levy"
+        ],
+        "correctAnswer": "Peter Levy",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Predator 2",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Predator 2",
+            "1990",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/58654-PREDATOR-2"
+        ]
+    },
+    {
+        "id": "film_5629",
+        "question": "In Predators, who was the director of photography?",
+        "answers": [
+            "Donald McAlpine",
+            "Peter Levy",
+            "Gyula Pados",
+            "Larry Fong"
+        ],
+        "correctAnswer": "Gyula Pados",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Predators",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Predators",
+            "2010",
+            "Science Fiction",
+            "Production",
+            "Source: https://catalog.afi.com/Film/66573-PREDATORS"
+        ]
+    },
+    {
+        "id": "film_5630",
+        "question": "In The Predator, who photographed Shane Black's film?",
+        "answers": [
+            "Jeff Cutter",
+            "Larry Fong",
+            "Donald McAlpine",
+            "Peter Levy"
+        ],
+        "correctAnswer": "Larry Fong",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Predator",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: The Predator",
+            "2018",
+            "Science Fiction",
+            "Production",
+            "Source: https://pro.imdb.com/title/tt3829266/"
+        ]
+    },
+    {
+        "id": "film_5631",
+        "question": "In Prey, who worked with Dan Trachtenberg as director of photography?",
+        "answers": [
+            "Jeff Cutter",
+            "Larry Fong",
+            "Gyula Pados",
+            "Donald McAlpine"
+        ],
+        "correctAnswer": "Jeff Cutter",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Prey",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Prey",
+            "2022",
+            "Science Fiction",
+            "Production",
+            "Source: https://theasc.com/video/clubhouse-conversations-prey/"
+        ]
+    },
+    {
+        "id": "film_5632",
+        "question": "In Predator: Killer of Killers, which real-time engine did The Third Floor use in its animated production pipeline?",
+        "answers": [
+            "Unreal Engine",
+            "Unity",
+            "Godot",
+            "CryEngine"
+        ],
+        "correctAnswer": "Unreal Engine",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Predator: Killer of Killers",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Predator: Killer of Killers",
+            "2025",
+            "Science Fiction",
+            "Production",
+            "Source: https://thethirdfloorinc.com/what-we-do/animation"
+        ]
+    },
+    {
+        "id": "film_5633",
+        "question": "In Predator: Badlands, which New Zealand city known for its geothermal landscape was a filming base alongside Auckland?",
+        "answers": [
+            "Dunedin",
+            "Nelson",
+            "Wellington",
+            "Rotorua"
+        ],
+        "correctAnswer": "Rotorua",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Predator: Badlands",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: Predator: Badlands",
+            "2025",
+            "Science Fiction",
+            "Production",
+            "Source: https://www.nzfilm.co.nz/films/predator-badlands"
+        ]
+    },
+    {
+        "id": "film_5634",
+        "question": "In The Predator Holiday Special, which animation studio produced the stop-motion short?",
+        "answers": [
+            "Laika",
+            "Aardman Animations",
+            "Stoopid Buddy Stoodios",
+            "ShadowMachine"
+        ],
+        "correctAnswer": "Stoopid Buddy Stoodios",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "The Predator Holiday Special",
+        "category": "Film",
+        "tags": [
+            "Predator franchise",
+            "Film: The Predator Holiday Special",
+            "2018",
+            "Science Fiction",
+            "Production",
+            "Short Film",
+            "Source: https://en.wikipedia.org/wiki/The_Predator_Holiday_Special"
+        ]
+    }
 ];
