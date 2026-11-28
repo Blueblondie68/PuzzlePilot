@@ -4821,5 +4821,212 @@ module.exports = [
                 "Storyline",
                 "Source: https://en.wikipedia.org/wiki/Ghostbusters:_Frozen_Empire"
             ]
-        }
+        },
+    {
+        "id": "film_5599",
+        "question": "In Ghostbusters (1984), who photographed the original film?",
+        "answers": [
+            "László Kovács",
+            "Michael Chapman",
+            "Robert Yeoman",
+            "Eric Steelberg"
+        ],
+        "correctAnswer": "László Kovács",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters (1984)",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters (1984)",
+            "1984",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/57089-"
+        ]
+    },
+    {
+        "id": "film_5600",
+        "question": "In Ghostbusters (1984), which editor shares credit with Sheldon Kahn?",
+        "answers": [
+            "David Blewitt",
+            "Donn Cambern",
+            "Nathan Orloff",
+            "Paul Hirsch"
+        ],
+        "correctAnswer": "David Blewitt",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters (1984)",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters (1984)",
+            "1984",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/57089-"
+        ]
+    },
+    {
+        "id": "film_5601",
+        "question": "In Ghostbusters II, who was the cinematographer?",
+        "answers": [
+            "László Kovács",
+            "Robert Yeoman",
+            "Eric Steelberg",
+            "Michael Chapman"
+        ],
+        "correctAnswer": "Michael Chapman",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters II",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters II",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/67913-"
+        ]
+    },
+    {
+        "id": "film_5602",
+        "question": "In Ghostbusters II, who was the production designer?",
+        "answers": [
+            "John DeCuir",
+            "François Audouy",
+            "Bo Welch",
+            "Jefferson Sage"
+        ],
+        "correctAnswer": "Bo Welch",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters II",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters II",
+            "1989",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/67913-"
+        ]
+    },
+    {
+        "id": "film_5603",
+        "question": "In Ghostbusters (2016), who was the production designer for the 2016 reboot?",
+        "answers": [
+            "Bo Welch",
+            "Jefferson Sage",
+            "John DeCuir",
+            "François Audouy"
+        ],
+        "correctAnswer": "Jefferson Sage",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters (2016)",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters (2016)",
+            "2016",
+            "Action",
+            "Production",
+            "Source: https://www.the-numbers.com/movie/Ghostbusters-%282016%29"
+        ]
+    },
+    {
+        "id": "film_5604",
+        "question": "In Ghostbusters (2016), who was the director of photography on the reboot?",
+        "answers": [
+            "Michael Chapman",
+            "Robert Yeoman",
+            "László Kovács",
+            "Eric Steelberg"
+        ],
+        "correctAnswer": "Robert Yeoman",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters (2016)",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters (2016)",
+            "2016",
+            "Action",
+            "Production",
+            "Source: https://www.the-numbers.com/movie/Ghostbusters-%282016%29"
+        ]
+    },
+    {
+        "id": "film_5605",
+        "question": "In Ghostbusters: Afterlife, who designed the production of the film set in Summerville?",
+        "answers": [
+            "François Audouy",
+            "Bo Welch",
+            "Jefferson Sage",
+            "John DeCuir"
+        ],
+        "correctAnswer": "François Audouy",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters: Afterlife",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters: Afterlife",
+            "2021",
+            "Action",
+            "Production",
+            "Source: https://assets.adg.org/media/submissions/2021-12-06_16-08-42/audouy_ghostbusters_afterlife_-_b_compressed.pdf"
+        ]
+    },
+    {
+        "id": "film_5606",
+        "question": "In Ghostbusters: Frozen Empire, who photographed the film as director of photography?",
+        "answers": [
+            "Robert Yeoman",
+            "Michael Chapman",
+            "László Kovács",
+            "Eric Steelberg"
+        ],
+        "correctAnswer": "Eric Steelberg",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters: Frozen Empire",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters: Frozen Empire",
+            "2024",
+            "Action",
+            "Production",
+            "Source: https://www.the-numbers.com/movie/Ghostbusters-Frozen-Empire-%282024%29"
+        ]
+    },
+    {
+        "id": "film_5607",
+        "question": "In Ghostbusters: Frozen Empire, which editor shares credit with Shane Reid?",
+        "answers": [
+            "Sheldon Kahn",
+            "Donn Cambern",
+            "Nathan Orloff",
+            "David Blewitt"
+        ],
+        "correctAnswer": "Nathan Orloff",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Ghostbusters: Frozen Empire",
+        "category": "Film",
+        "tags": [
+            "Ghostbusters franchise",
+            "Film: Ghostbusters: Frozen Empire",
+            "2024",
+            "Action",
+            "Production",
+            "Source: https://www.the-numbers.com/movie/Ghostbusters-Frozen-Empire-%282024%29"
+        ]
+    }
 ];
