@@ -8041,5 +8041,331 @@ module.exports = [
                 "Actor: Sung Kang",
                 "Source: https://en.wikipedia.org/wiki/Los_Bandoleros_(film)"
             ]
-        }
+        },
+    {
+        "id": "film_5552",
+        "question": "In The Fast and the Furious, whose garage is Brian investigating when Dom and Vince catch him looking at car parts?",
+        "answers": [
+            "Hector's",
+            "Jesse's",
+            "Leon's",
+            "Tej's"
+        ],
+        "correctAnswer": "Hector's",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Fast and the Furious",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: The Fast and the Furious",
+            "2001",
+            "Action",
+            "Storyline",
+            "Source: https://en.wikipedia.org/wiki/The_Fast_and_the_Furious_(2001_film)"
+        ]
+    },
+    {
+        "id": "film_5553",
+        "question": "In The Fast and the Furious, who plays LAPD Sergeant Tanner, Brian's superior?",
+        "answers": [
+            "Thom Barry",
+            "Matt Schulze",
+            "Johnny Strong",
+            "Ted Levine"
+        ],
+        "correctAnswer": "Ted Levine",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Fast and the Furious",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: The Fast and the Furious",
+            "2001",
+            "Action",
+            "Cast",
+            "Character: Sergeant Tanner",
+            "Actor: Ted Levine",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/62011"
+        ]
+    },
+    {
+        "id": "film_5554",
+        "question": "In 2 Fast 2 Furious, who photographed the film?",
+        "answers": [
+            "Ericson Core",
+            "Amir Mokri",
+            "Matthew F. Leonetti",
+            "Stephen F. Windon"
+        ],
+        "correctAnswer": "Matthew F. Leonetti",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "2 Fast 2 Furious",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: 2 Fast 2 Furious",
+            "2003",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/62923"
+        ]
+    },
+    {
+        "id": "film_5555",
+        "question": "In 2 Fast 2 Furious, which editor shares credit with Dallas Puett?",
+        "answers": [
+            "Christian Wagner",
+            "Bruce Cannon",
+            "Fred Raskin",
+            "Peter Honess"
+        ],
+        "correctAnswer": "Bruce Cannon",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "2 Fast 2 Furious",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: 2 Fast 2 Furious",
+            "2003",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/62923"
+        ]
+    },
+    {
+        "id": "film_5556",
+        "question": "In The Fast and the Furious: Tokyo Drift, what nickname does Twinkie use for the Nissan Silvia that Han lends Sean?",
+        "answers": [
+            "Black Beauty",
+            "Mona Lisa",
+            "Silver Bullet",
+            "White Lightning"
+        ],
+        "correctAnswer": "Mona Lisa",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "The Fast and the Furious: Tokyo Drift",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: The Fast and the Furious: Tokyo Drift",
+            "2006",
+            "Action",
+            "Storyline",
+            "Source: https://www.imdb.com/title/tt0463985/quotes/?item=qt0281443"
+        ]
+    },
+    {
+        "id": "film_5557",
+        "question": "In Fast & Furious, who was the director of photography?",
+        "answers": [
+            "Amir Mokri",
+            "Matthew F. Leonetti",
+            "Stephen F. Windon",
+            "Ericson Core"
+        ],
+        "correctAnswer": "Amir Mokri",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious",
+            "2009",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/64883-FAST-FURIOUS"
+        ]
+    },
+    {
+        "id": "film_5558",
+        "question": "In Fast & Furious 5: Rio Heist, which model is the open-top car in which Dom and Brian go over the cliff after escaping the train?",
+        "answers": [
+            "Ford GT40",
+            "De Tomaso Pantera",
+            "Shelby Cobra Daytona Coupé",
+            "Chevrolet Corvette Grand Sport"
+        ],
+        "correctAnswer": "Chevrolet Corvette Grand Sport",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Fast & Furious 5: Rio Heist",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious 5: Rio Heist",
+            "2011",
+            "Action",
+            "Storyline",
+            "Source: https://www.motortrend.com/features/impp-1106-cars-of-fast-five"
+        ]
+    },
+    {
+        "id": "film_5559",
+        "question": "In Fast & Furious 6, which Hertfordshire airfield was used for exterior runway scenes in the finale?",
+        "answers": [
+            "Elstree Aerodrome",
+            "Panshanger Aerodrome",
+            "Bovingdon Airfield",
+            "London Luton Airport"
+        ],
+        "correctAnswer": "Bovingdon Airfield",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious 6",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious 6",
+            "2013",
+            "Action",
+            "Production",
+            "Source: https://www.imdb.com/title/tt1905041/locations/"
+        ]
+    },
+    {
+        "id": "film_5560",
+        "question": "In Fast & Furious 7, who shares Wētā's visual effects supervision credit with Martin Hill?",
+        "answers": [
+            "John Knoll",
+            "Dennis Muren",
+            "Joe Letteri",
+            "Paul Franklin"
+        ],
+        "correctAnswer": "Joe Letteri",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious 7",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious 7",
+            "2015",
+            "Action",
+            "Production",
+            "Source: https://www.wetafx.co.nz/films/filmography/furious-7"
+        ]
+    },
+    {
+        "id": "film_5561",
+        "question": "In Fast & Furious 8, which Icelandic lake area was used to film some of the icy locations?",
+        "answers": [
+            "Þingvallavatn",
+            "Mývatn",
+            "Kleifarvatn",
+            "Lagarfljót"
+        ],
+        "correctAnswer": "Mývatn",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious 8",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious 8",
+            "2017",
+            "Action",
+            "Production",
+            "Source: https://www.imdb.com/title/tt4630562/locations/"
+        ]
+    },
+    {
+        "id": "film_5562",
+        "question": "In Fast & Furious Presents: Hobbs & Shaw, who was the production designer?",
+        "answers": [
+            "David Scheunemann",
+            "Jan Roelfs",
+            "Bill Brzeski",
+            "Ida Random"
+        ],
+        "correctAnswer": "David Scheunemann",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious Presents: Hobbs & Shaw",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious Presents: Hobbs & Shaw",
+            "2019",
+            "Action",
+            "Production",
+            "Source: https://www.the-numbers.com/movie/Fast-and-Furious-Presents-Hobbs-and-Shaw-%282019%29"
+        ]
+    },
+    {
+        "id": "film_5563",
+        "question": "In Fast & Furious 9, which second unit director and stunt coordinator returned after working on the franchise since the Rio film?",
+        "answers": [
+            "Jack Gill",
+            "Andy Gill",
+            "Dan Bradley",
+            "Spiro Razatos"
+        ],
+        "correctAnswer": "Spiro Razatos",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast & Furious 9",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast & Furious 9",
+            "2021",
+            "Action",
+            "Production",
+            "Source: https://cdn.festival-cannes.com/media/uploads/2023/03/122555.pdf"
+        ]
+    },
+    {
+        "id": "film_5564",
+        "question": "In Fast X, which northern Italian city hosted part of the Italian shoot after filming in Rome?",
+        "answers": [
+            "Milan",
+            "Genoa",
+            "Bologna",
+            "Turin"
+        ],
+        "correctAnswer": "Turin",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Fast X",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Fast X",
+            "2023",
+            "Action",
+            "Production",
+            "Source: https://www.fctp.it/highlight_detail.php?id=9"
+        ]
+    },
+    {
+        "id": "film_5565",
+        "question": "In Los Bandoleros, which musician plays Rico Santos?",
+        "answers": [
+            "Tego Calderón",
+            "Ludacris",
+            "Don Omar",
+            "Tyrese Gibson"
+        ],
+        "correctAnswer": "Don Omar",
+        "difficulty": "Medium",
+        "dailyEligible": true,
+        "topic": "Los Bandoleros",
+        "category": "Film",
+        "tags": [
+            "Fast & Furious franchise",
+            "Film: Los Bandoleros",
+            "2009",
+            "Action",
+            "Cast",
+            "Character: Rico Santos",
+            "Actor: Don Omar",
+            "Source: https://watch.plex.tv/en-GB/movie/los-bandoleros-2009?context.unit=H"
+        ]
+    }
 ];
