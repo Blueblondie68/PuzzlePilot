@@ -5842,5 +5842,235 @@ module.exports = [
                 "Source: https://www.cartoonbrew.com/feature-film/innocence-and-truth-how-weta-fx-animated-a-key-scene-in-kingdom-of-the-planet-of-the-apes-245674.html",
                 "Source: https://en.wikipedia.org/wiki/Kingdom_of_the_Planet_of_the_Apes"
             ]
-        }
+        },
+    {
+        "id": "film_5608",
+        "question": "In Planet of the Apes (1968), who photographed the original film as director of photography?",
+        "answers": [
+            "Milton Krasner",
+            "Joseph Biroc",
+            "Leon Shamroy",
+            "Richard H. Kline"
+        ],
+        "correctAnswer": "Leon Shamroy",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Planet of the Apes (1968)",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Planet of the Apes (1968)",
+            "1968",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/22314-planet-oftheapes"
+        ]
+    },
+    {
+        "id": "film_5609",
+        "question": "In Beneath the Planet of the Apes, who was the cinematographer on the first sequel?",
+        "answers": [
+            "Leon Shamroy",
+            "Milton Krasner",
+            "Joseph Biroc",
+            "Bruce Surtees"
+        ],
+        "correctAnswer": "Milton Krasner",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Beneath the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Beneath the Planet of the Apes",
+            "1970",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/23440"
+        ]
+    },
+    {
+        "id": "film_5610",
+        "question": "In Escape from the Planet of the Apes, who was the director of photography?",
+        "answers": [
+            "Joseph Biroc",
+            "Milton Krasner",
+            "Bruce Surtees",
+            "Richard H. Kline"
+        ],
+        "correctAnswer": "Joseph Biroc",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Escape from the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Escape from the Planet of the Apes",
+            "1971",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/54073"
+        ]
+    },
+    {
+        "id": "film_5611",
+        "question": "In Conquest of the Planet of the Apes, who photographed the film?",
+        "answers": [
+            "Milton Krasner",
+            "Joseph Biroc",
+            "Richard H. Kline",
+            "Bruce Surtees"
+        ],
+        "correctAnswer": "Bruce Surtees",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Conquest of the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Conquest of the Planet of the Apes",
+            "1972",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/MovieDetails/54691"
+        ]
+    },
+    {
+        "id": "film_5612",
+        "question": "In Battle for the Planet of the Apes, who served as cinematographer on the final film of the original series?",
+        "answers": [
+            "Bruce Surtees",
+            "Joseph Biroc",
+            "Milton Krasner",
+            "Richard H. Kline"
+        ],
+        "correctAnswer": "Richard H. Kline",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Battle for the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Battle for the Planet of the Apes",
+            "1973",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/54889-BATTLE-FOR-THE-PLANET-OF-THE-APES"
+        ]
+    },
+    {
+        "id": "film_5613",
+        "question": "In Planet of the Apes (2001), who was the production designer on Tim Burton's film?",
+        "answers": [
+            "Owen Paterson",
+            "J. Michael Riva",
+            "Rick Heinrichs",
+            "John DeCuir"
+        ],
+        "correctAnswer": "Rick Heinrichs",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Planet of the Apes (2001)",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Planet of the Apes (2001)",
+            "2001",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Film/62155-PLANET-OFTHEAPES"
+        ]
+    },
+    {
+        "id": "film_5614",
+        "question": "In Rise of the Planet of the Apes, who was the cinematographer?",
+        "answers": [
+            "Michael Seresin",
+            "Andrew Lesnie",
+            "Philippe Rousselot",
+            "Gyula Pados"
+        ],
+        "correctAnswer": "Andrew Lesnie",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Rise of the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Rise of the Planet of the Apes",
+            "2011",
+            "Action",
+            "Production",
+            "Source: https://catalog.afi.com/Catalog/moviedetails/67528"
+        ]
+    },
+    {
+        "id": "film_5615",
+        "question": "In Dawn of the Planet of the Apes, which cinematographer worked with Matt Reeves to give the digital 3D footage a film-like look?",
+        "answers": [
+            "Michael Seresin",
+            "Andrew Lesnie",
+            "Philippe Rousselot",
+            "Gyula Pados"
+        ],
+        "correctAnswer": "Michael Seresin",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Dawn of the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Dawn of the Planet of the Apes",
+            "2014",
+            "Action",
+            "Production",
+            "Source: https://theasc.com/podcast/dawn-of-the-planet-of-the-apes-michael-seresin-bsc/"
+        ]
+    },
+    {
+        "id": "film_5616",
+        "question": "In War for the Planet of the Apes, which effects company used performance capture to create the film's digital apes, including details such as snow collecting in their fur?",
+        "answers": [
+            "Wētā FX",
+            "Tippett Studio",
+            "Animal Logic",
+            "Rising Sun Pictures"
+        ],
+        "correctAnswer": "Wētā FX",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "War for the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: War for the Planet of the Apes",
+            "2017",
+            "Action",
+            "Production",
+            "Source: https://www.wetafx.co.nz/articles/masters-of-war"
+        ]
+    },
+    {
+        "id": "film_5617",
+        "question": "In Kingdom of the Planet of the Apes, who was the director of photography on Wes Ball's film?",
+        "answers": [
+            "Michael Seresin",
+            "Andrew Lesnie",
+            "Philippe Rousselot",
+            "Gyula Pados"
+        ],
+        "correctAnswer": "Gyula Pados",
+        "difficulty": "Hard",
+        "dailyEligible": true,
+        "topic": "Kingdom of the Planet of the Apes",
+        "category": "Film",
+        "tags": [
+            "Planet of the Apes franchise",
+            "Film: Kingdom of the Planet of the Apes",
+            "2024",
+            "Action",
+            "Production",
+            "Source: https://theasc.com/news/gyula-pados-welcomed-as-new-member/"
+        ]
+    }
 ];
